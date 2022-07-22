@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>DOM Play</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <style>
+    /* #play span {
+
+        background-color: yellow;
+
+    } */
+  </style>
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1 style="background-color: rgb(232, 234, 226) ;">DOM Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="https://en.wikipedia.org/wiki/Titanic_(1997_film)" target="_blank"> Titanic (1997 film)</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
-     
+
    <main class="wrapper">
-    <p>Content goes here</p>
-     <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+    <div style="color: white";>
+      <p>
+        Hello, welcome to my page! <br>
+        In this page, I am putting on a play from the movie Titanic, which will be displayed on a tablet, that the actors can touch the name of the character they are playing so they can highlight their lines to make it easier to rehearse. This single page application is done using the DOM and javascript. The page will do the work without page re-loads.
+      </p>
+      <P>
+        I created a function which passes in an element by reference, which is a live instance of the element on the page, and changes the background color. I added the capability of toggling, switching between 2 states, the background color of the element passed into a function. I have also built an anonymous function into the event listener loop. A new function is created in which I pass in the identity of the current actor (ROSE,RUTH, MOLLY, and JACK) to the function so that when clicked, the element always knows its name. 
+      </P>
+       THis page works with a single click; whenever the actors click on the name/ line of thier character, then all lines for that specific actor in a play is highlighted with a dark bule color while the lines for the rest of the actors are highlighed with white making it easy for the actor to focus only on his or her lines.
+      <p>
+      <h2>Feel free to try it youself by clicking on any character's line of play!</h2>
+
+      </p>
+    </div>
+      <div id="play">
+          <p><span data-actor="rose"> <b> ROSE: </b> Shall we go dress, mother? <br> (over her shoulder) <br>See you at dinner, Jack. </span></p>
+          <p><span data-actor="ruth"><b> RUTH: </b>  (as they walk away) <br> Rose, look at you... out in the sun with no hat. Honestly! <br> The Countess exits with Ruth and Rose, leaving Jack and Molly alone on deck.</span></p>
+          <p><span data-actor="molley"><b> MOLLY: </b> Son, do you have the slightest comprehension of what you're doing?</span></p>
+          <p><span data-actor="jack"><b> JACK: </b> Not really. </span></p>
+          <p><span data-actor="molley"> <b> MOLLY: </b> Well, you're about to go into the snakepit. I hope you're ready. What are
+          you planning to wear? <br>      
+          Jack looks down at his clothes. Back up at her. He hadn't thought about
+          that.</span></p> 
+          <p><span data-actor="jack"> <b> JACK: </b> Not really. </span></p>
+          <p><span data-actor="molley"><b> MOLLY: </b> Ain't nothin' to it, is there, Jack?</span></p>
+          <p><span data-actor="jack"><b> JACK: </b> Yeah, you just dress like a pallbearer and keep your nose up. </span></p>
+          <p><span data-actor="molley"><b> MOLLY: </b> Remember, the only thing they respect is money, so just act like you've got
+            a lot of it and you're in the club. <br>       
+            As they enter the swirling throng, Rose leans close to him, pointing out several notables.</span></p>
+          <p><span data-actor="ruth"><b> RUTH: </b>  How can you say that Colonel? Caledon Hockley is a great catch. <br>
+            The entourage strolls toward the dining saloon, where they run into the
+            Astor's going through the ornate double doors. </span></p>
+          <p><span data-actor="rose"> <b> ROSE: </b> J.J., Madeleine, I'd like you to meet Jack Dawson.</span></p>
+          <p><span data-actor="ruth"> <b> RUTH: </b> You are not to see that boy again, do you understand me Rose? I forbid it! <br>
+              Rose has her knee at the base of her mother's back and is pulling the
+              corset strings with both hands. </span></p>
+          <p><span data-actor="rose"> <b> ROSE: </b> Oh, stop it, Mother. You'll give yourself a nosebleed. <br> Ruth pulls away from her, and crosses to the door, locking it. CLACK! </span></p>       
+        
+      </div>
+    <footer>
+      <p><small>&copy; 2022 by 
+          Edlawit Girma, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
     </footer>
   </main>
   <script src="js/main.js"></script>
+  <script src="js/dom-play.js"></script>
  </body>
 </html>

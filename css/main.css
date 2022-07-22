@@ -3,15 +3,15 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
-    background-color: lightgray;
+    background-color: rgb(122, 170, 196);
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
 }
 
 ::selection {
-    color: #000; 
-    background: #ff0;
+    color: rgb(0, 0, 0); 
+    background: rgb(230, 230, 29);
 }
 
 h1 {
@@ -42,8 +42,8 @@ a {
 }
 
 a:hover {
-    color: whitesmoke;
-    background-color: darkcyan;
+    color: #fcfcfd;
+    background-color: rgb(69, 204, 227);
     text-decoration: none;
 }
 
@@ -60,6 +60,8 @@ footer {
     main.wrapper {
         width: 80%;
         margin: auto;
+        background-color: black;
+        color: rgba(232, 232, 15, 0.902);
     }
     
     h1 {
